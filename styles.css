@@ -100,6 +100,7 @@ body {
 #form_name, #form_contact, #form_password{
   flex: 1 1 0;
   display: flex;
+
 }
 
 .userinput {
@@ -107,6 +108,7 @@ body {
   flex-direction: column;
   flex: 1 1 0;
   font-size: small;
+  margin-bottom: 0px;
 }
 #form_button {
   margin-top: 10px;
@@ -126,6 +128,16 @@ input {
   height: 15px;
   margin-right: 10px;
   width: 200px;
+  border: 2px solid #E5E7EB;
+}
+
+input.error {
+  border: 2px solid red;
+}
+
+input:focus {
+  outline-color: blue;
+  outline-width: 1;
 }
 
 button {
@@ -144,5 +156,11 @@ button {
 .green {
   color: #596D48;
   margin-left: 5px;
+}
+
+#password_error {
+  font-size: 10px;
+  color: red;
+  margin: 1px;
 }
 
